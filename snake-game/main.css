@@ -1,0 +1,97 @@
+body {
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    background: url(img/new-background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*    background-size: 120px;*/
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    padding-top: 30px;
+    ;
+
+}
+
+#whole-background {}
+
+#start {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    right: 60%;
+    background-color: #00008B;
+    text-align: center;
+    border: none;
+    color: yellow;
+    z-index: 1000;
+    top: 30%;
+    left: 41%;
+    font-size: 35px;
+    font-family: serif;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+
+#background {
+    position: absolute;
+    top: 6.5%;
+    left: 27.8%;
+    width: 608px;
+    height: 608px;
+
+}
+
+#restart {
+    width: 90px;
+    background: #00008B;
+    color: yellow;
+    opacity: 0.6;
+    transition: 0.3s;
+    padding: 10px;
+    font-family: serif;
+    position: absolute;
+    display: block;
+    width: 250px;
+    left: 41%;
+    bottom: 6%;
+
+}
+
+#info1 {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    left: 42%;
+    color: yellow;
+}
+
+#info2 {
+    position: absolute;
+    top: 60%;
+    width: 40%;
+    left: 30%;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+/*Animated Buttons*/
+
+
+
+#start:hover {
+    opacity: 1
+}
+
+#restart:hover {
+    opacity: 1
+}
+#logo{
+    z-index: 1000;
+}

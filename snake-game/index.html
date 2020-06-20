@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kobra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+</head>
+
+<body>
+    <div id="whole-background">
+        <button id="start" onclick="game1()" type="button">Start</button>
+        <img src='img/background-3.jpg' id='background'>
+        <h2 id='info1'><b>Welcome to Kobra!</b> </h2>
+        <h3 id='info2'> Don't run the snake into the wall, or his own tail: you die and lose. Use your cursor keys: up, left, right, and down. Eat the colored apples to gain points. have fun!</h3>
+
+       
+    </div>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <button onclick="repeat()" id="restart">REPEAT</button>
+    <script>
+        function game1() {
+            document.getElementById("background").style.display = "none";
+            document.getElementById("start").style.display = "none";
+            document.getElementById("info1").style.display = "none";
+            document.getElementById("info2").style.display = "none";
+
+        }
+
+        function repeat() {
+            location.reload();
+        }
+    </script>
+</body>
+<script src="snake.js"></script></html>
