@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Good Corner</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <script src="main.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!--   nav section     -->
+    <!--    <div class="bs-example">-->
+    <nav>
+        <ol class="breadcrumb" style="background-color: darkslategrey">
+
+            <li class="breadcrumb-item"><a href="#men">Men</a></li>
+            <li class="breadcrumb-item active"><a href="#women">Women</a></li>
+            <li class="breadcrumb-item"><a href="#accessories">Accessories</a></li>
+            <!--   cart popup         -->
+            <li class="breadcrumb-item"><button type="button" data-toggle="modal" data-target="#myModal" class="myBtn">Cart</button>
+
+        </ol>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+                        <!--          <h4 class="modal-title">Modal Header</h4>-->
+                    </div>
+                    <div class="modal-body">
+                        <section class="container content-section" id="stick-cart">
+                            <h2 class="section-header">CART</h2>
+                            <div class="cart-row" id="cart">
+                                <span class="cart-item cart-header cart-column">ITEM</span>
+                                <span class="cart-price cart-header cart-column">PRICE</span>
+<!--                                <span class="cart-size cart-header cart-column">SIZE</span>-->
+                                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                            </div>
+                            <div class="cart-items">
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">0</span>
+                            </div>
+                            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <!--Nav section ends-->
+
+    <!--header-->
+    <header id="home">
+        <div class="header-banner">
+            <h1>The Good Corner</h1>
+        </div>
+    </header>
+    <!--        <div class="clear"></div>-->
+
+    <!--   nav section     -->
+    <!--
+    <div class="bs-example">
+    <nav>
+        <ol class="breadcrumb" style="background-color: darkslategrey">
+            
+            <li class="breadcrumb-item"><a href="#men">Men</a></li>
+            <li class="breadcrumb-item active"><a href="#women">Women</a></li>
+            <li class="breadcrumb-item"><a href="#accessories">Accessories</a></li>
+            <li class="breadcrumb-item"><a href="#cart">Cart</a></li>
+        </ol>
+    </nav>
+</div>
+-->
+
+    <!--Nav section ends-->
+
+
+    <!--  header ends  -->
+    <section class="/*container*/ content-section">
+        <h2 class="section-header">Men</h2>
+        <div class="shop-items" id="men">
+            <div class="shop-item">
+                <span class="shop-item-title">Sleek Black Leather Jacket</span>
+                <!--
+                <div class="image-text">
+                    <p><b>187 Strassenbande</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/sleek-black-leather-jacket.png">
+                <div class="shop-item-details">
+
+                    <span class="shop-item-price">£89.54</span>
+<!--
+                    <select id="size" name="size"> 
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+    
+  </select>
+-->
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">leather-vintage-biker</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Fianso</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/leather-vintage-biker.png" alt="fianso">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£74.12</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">leather-fight-club</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Ed Sheeran</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/leather-fight-club.png" alt="edsheran">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£83.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Bourge-Bomber-Jacket</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Drake</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Bourgeois-Bomber-Jacket.png" alt="drake">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£99.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Antique Flowers Bomber</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Post Malone</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Antique-Flowers-Bomber.png" alt="postmalone">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£72.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">King Simaius Bomber</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Ariana Grande</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/King-Signature-Bomber.png" alt="arianagrande">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£69.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Darkness Floral T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Bruce Spingsteen</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Dark-Floral-T-Shirt.png" alt="BruceSpingsteen">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£31.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Hawaii T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Khalid</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Hawaii-T-Shirt.png" alt="khalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£29.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">White Blossom T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Young Thug</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/White-Blossom-T-Shirt.png" alt="youngthug">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">High Sector T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>The Script</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/High-Sector-T-Shirt.png" alt="thescript">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£26.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Like A Boss T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Soolking</b></p>
+                </div>
+-->
+
+                <img class="shop-item-image" src="images/Men/Like-A-Boss-T-Shirt.png" alt="soolking">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£28.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Dark Rosemallows T-Shirt</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Solange</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Dark-Rosemallows-T-Shirt.jpg" alt="solange">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£23.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Sky Crow Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Big Thief</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Sky-Crow-Hoodie.png" alt="bigThief">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£30.54</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Fresh-Out Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>James Blake</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Fresh-Out-Hoodie.png" alt="jamesBlake">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£39.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Desiklo Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Thom Yorke</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Designated-Hoodie.png" alt="thomYorke">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£41.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cubes Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Carly Rae Jepsen</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Cubes-Hoodie.png" alt="dedicated">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£40.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Royal Purple Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Denzel Curry</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Royal-Purple-Hoodie.png" alt="denzelCurry">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£34.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Colorful X Hoodie</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Colorful-X-Hoodie.png" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£35.65</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Capitals Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Capitals-Sweatpants.png" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£23.44</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">La Gioconda Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/La-Gioconda-Sweatpants.jpg" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.54</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Biking Red Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Biking-Red-Sweatpants.jpg" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£27.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Addicted Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/Addicted-Sweatpants.png" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£23.77</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">After The Fire Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/After-The-Fire-Sweatpants.png" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£26.44</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">X Mask Sweatpants</span>
+                <!--
+                <div class="image-text">
+                    <p><b>Aicha</b></p>
+                </div>
+-->
+                <img class="shop-item-image" src="images/Men/X-Mask-Sweatpants.png" alt="chebKhalid">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£27.44</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="/*container*/ content-section">
+        <h2 class="section-header">Women</h2>
+        <div class="shop-items" id="women">
+            <div class="shop-item">
+                <span class="shop-item-title">Tracksuit Bomber Jacket</span>
+                <img class="shop-item-image" src="images/Women/Tracksuit-Bomber-Jacket.png" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£75.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"> Hawaiian Dreams Jacket</span>
+                <img class="shop-item-image" src="images/Women/Hawaiian-Dreams-Bomber-Jacket.jpg" alt="coffeeCup">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£80.88</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tropical Sketch Jacket</span>
+                <img class="shop-item-image" src="images/Women/Tropical-Sketch-Bomber-Jacket.jpg" alt="box">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£82.66</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tiger Sakura Bomber Jacket</span>
+                <img class="shop-item-image" src="images/Women/Tiger-Sakura-Bomber-Jacket.jpg" alt="light">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£81.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tattoo Pattern Bomber Jacket</span>
+                <img class="shop-item-image" src="images/Women/Tattoo-Pattern-Bomber-Jacket.jpg" alt="table">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£89.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Venus Rose Blossom Jacket</span>
+                <img class="shop-item-image" src="images/Women/Venus-Rose-Blossom-Bomber-Jacket.jpg" alt="vacum">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£82.55</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tropical Sketch Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/Tropical-Sketch-Cropped-Hoodie.jpg" alt="bag">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£35.34</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">System Failure Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/System-Failure-Cropped-Hoodie.jpg" alt="wood">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£39.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Drag Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/Drag-Cropped-Hoodie.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£39.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wolf In Night Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/Wolf-In-Night-Cropped-Hoodie.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£37.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">B.L.T.U Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/Better-Late-Than-Ugly-Cropped-Hoodie.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£36.77</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Roaming Cropped Hoodie</span>
+                <img class="shop-item-image" src="images/Women/Roaming-Cropped-Hoodie.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£39.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Cherry Blossom T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/Cherry-Blossom-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£29.88</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">System Failure T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/System-Failure-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£27.56</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Vintage Flowers T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/Vintage-Flowers-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.88</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tracksuit T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/Tracksuit-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£27.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Evening Bouquet T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/Evening-Bouquet-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£24.34</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Tik T-Shirt</span>
+                <img class="shop-item-image" src="images/Women/Tik-T-Shirt.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£28.77</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Vintage Flowers Leggings</span>
+                <img class="shop-item-image" src="images/Women/Vintage-Flowers-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£26.77</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Caspar-Leggings</span>
+                <img class="shop-item-image" src="images/Women/Caspar-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£29.65</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Triple High Leggings</span>
+                <img class="shop-item-image" src="images/Women/Triple-High-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£22.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Sliving Leggings</span>
+                <img class="shop-item-image" src="images/Women/Sliving-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£23.77</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Hang out Leggings</span>
+                <img class="shop-item-image" src="images/Women/Hang-out-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£26.55</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Infected Leggings</span>
+                <img class="shop-item-image" src="images/Women/Infected-Leggings.jpg" alt="gilbert">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£28.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="/*container*/ content-section">
+        <h2 class="section-header">Accessories</h2>
+        <div class="shop-items" id="accessories">
+            <div class="shop-item">
+                <span class="shop-item-title">Skull Bucket Hat</span>
+                <img class="shop-item-image" src="images/Accessories/Embroidered-Simple-Skull-Bucket-Hat.png" alt="stefano">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£20.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Electric Thunder Bucket Hat</span>
+                <img class="shop-item-image" src="images/Accessories/Electric-Thunder-Bucket-Hat.png" alt="suit">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£20.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Rock On Cap</span>
+                <img class="shop-item-image" src="images/Accessories/Rock-On-Cap.jpg" alt="gant">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£22.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title"> Star Cap</span>
+                <img class="shop-item-image" src="images/Accessories/Star-Cap.jpg" alt="spongbob">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£22.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Mister Bora Sunglasses</span>
+                <img class="shop-item-image" src="images/Accessories/Mister-Bora.jpg" alt="cosmics">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£65.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Mister Spex Sunglasses</span>
+                <img class="shop-item-image" src="images/Accessories/Mister-Spex-sunglasses.jpg" alt="calvin">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£70.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Feux-De-Route Scarf </span>
+                <img class="shop-item-image" src="images/Accessories/HERMES-Feux-De-Route-Scarf.jpg" alt="mountain">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Avenue Dali Scarf</span>
+                <img class="shop-item-image" src="images/Accessories/Avenue-Dali-Scarf.jpg" alt="velvet">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£27.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Kaft Beanies</span>
+                <img class="shop-item-image" src="images/Accessories/Kaft-Beanies.jpg" alt="airmax">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Valerio Beanies</span>
+                <img class="shop-item-image" src="images/Accessories/red-beanies-jpg.webp" alt="airmax">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£20.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">La Grinta Belt</span>
+                <img class="shop-item-image" src="images/Accessories/La-Grinta-belt.jpg" alt="airmax">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.87</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">El Comandante Belt</span>
+                <img class="shop-item-image" src="images/Accessories/el-comandante-belt.jpg" alt="airmax">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£29.56</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>-->
+    <!--  Carts  -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: All Rights Reserved by Redouane Hammaci.</div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body></html>
